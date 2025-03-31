@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface SkillProps {
@@ -57,6 +56,7 @@ const Skills = () => {
     };
   }, []);
 
+/*
   const mainSkills = [
     { name: "JavaScript", level: 90 },
     { name: "React.js", level: 85 },
@@ -67,14 +67,15 @@ const Skills = () => {
     { name: "SQL", level: 65 },
     { name: "GraphQL", level: 60 },
   ];
+*/
 
   const additionalSkills = [
-    { name: "Redux", icon: "https://cdn.worldvectorlogo.com/logos/redux.svg" },
-    { name: "MongoDB", icon: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" },
-    { name: "Java", icon: "https://cdn.worldvectorlogo.com/logos/java-14.svg" },
-    { name: "GraphQL", icon: "https://cdn.worldvectorlogo.com/logos/graphql-logo-2.svg" },
-    { name: "Git", icon: "https://cdn.worldvectorlogo.com/logos/git-icon.svg" },
-    { name: "REST API", icon: "https://cdn.worldvectorlogo.com/logos/rest-api-icon.svg" },
+    { name: "JavaScript", icon: "public/javascript-icon.svj.svg" },
+    { name: "React", icon: "public/react_light-icon.svj.svg" },
+    { name: "Node.js", icon: "public/nodejs-icon.svj.svg" },
+    { name: "Java", icon: "public/java-icon.svj.svg" },
+    { name: "HTML5", icon: "public/html5-icon.svj.svg" },
+    { name: "CSS Tailwind", icon: "public/tailwindcss-icon.svj.svg" },
   ];
 
   return (
@@ -87,37 +88,22 @@ const Skills = () => {
           </p>
           <div className="w-20 h-1 bg-primary rounded mx-auto"></div>
         </div>
-
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-6">
-            <div className="space-y-4 reveal">
-              <h3 className="text-lg font-medium">Core Skills</h3>
-              {mainSkills.map((skill, index) => (
-                <SkillBar 
-                  key={index} 
-                  name={skill.name} 
-                  level={skill.level} 
-                />
-              ))}
-            </div>
-          </div>
-          
-          <div className="space-y-6">
-            <div className="reveal">
-              <h3 className="text-lg font-medium mb-6">Additional Technologies</h3>
+            <div className="reveal text-center">
+              <h3 className="text-xl font-medium mb-6">Core Technologies</h3>
               <div className="grid grid-cols-3 gap-4">
                 {additionalSkills.map((skill, index) => (
                   <SkillIcon 
-                    key={index} 
+                    key={index}   
                     name={skill.name} 
                     icon={skill.icon} 
                   />
                 ))}
               </div>
             </div>
-            
             <div className="space-y-4 mt-8 reveal">
-              <h3 className="text-lg font-medium">Professional Skills</h3>
+              <h3 className="text-xl font-medium text-center">Professional Skills</h3>
               <div className="flex flex-wrap gap-2">
                 {[
                   "Problem Solving", "Team Collaboration", "Code Review", 

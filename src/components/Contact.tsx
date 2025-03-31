@@ -57,7 +57,7 @@ const Contact = () => {
                 <div>
                   <h4 className="text-sm font-medium">Email Address</h4>
                   <a href="mailto:contact@tabeche.dev" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    contact@tabeche.dev
+                    otabeche23@gmail.com
                   </a>
                 </div>
               </div>
@@ -69,10 +69,10 @@ const Contact = () => {
                 <div>
                   <h4 className="text-sm font-medium">Social Profiles</h4>
                   <div className="flex items-center space-x-3 mt-2">
-                    <a href="#" className="text-foreground/80 hover:text-primary transition-colors" aria-label="GitHub">
+                    <a href="https://github.com/OthmanTabeche" className="text-foreground/80 hover:text-primary transition-colors" aria-label="GitHub">
                       <Github className="h-5 w-5" />
                     </a>
-                    <a href="#" className="text-foreground/80 hover:text-primary transition-colors" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/othmantabeche/" className="text-foreground/80 hover:text-primary transition-colors" aria-label="LinkedIn">
                       <Linkedin className="h-5 w-5" />
                     </a>
                   </div>
